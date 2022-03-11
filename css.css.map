@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "css.css",
+	"sources": [
+		"scss/css.scss"
+	],
+	"sourcesContent": [
+		"body {\r\n\twidth: 660px;\r\n}\r\n\r\nheader {\r\n\tmargin: 10px auto 0;\r\n\tdisplay: flex;\r\n\tjustify-content: space-between;\r\n\toutline: 2px solid black;\r\n}\r\n\r\nheader div {\r\n\toutline: 2px solid black;\r\n}\r\n\r\nheader div:last-child {\r\n\tdisplay: flex;\r\n}\r\n\r\nheader div div {\r\n\tpadding: 5px;\r\n}\r\n\r\nmain {\r\n\tmargin: 0 auto;\r\n\toutline: 2px solid black;\r\n}\r\n\r\ntable {\r\n\tmargin-top: 5px;\r\n\tpadding: 5px;\r\n\twidth: 100%;\r\n\toutline: 2px solid black;\r\n}\r\n\r\n.cellNeutral {\r\n\tbackground-color: green;\r\n\tcursor: pointer;\r\n\r\n\r\n\t&:hover {\r\n\t\tbackground-color: blue;\r\n\t}\r\n}\r\n\r\n.cellEmpty {\r\n\tbackground-color: white;\r\n\tcursor: default;\r\n}"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,IAAI,CAAC;EACJ,KAAK,EAAE,KAAK;CACZ;;;AAED,AAAA,MAAM,CAAC;EACN,MAAM,EAAE,WAAW;EACnB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,OAAO,EAAE,eAAe;CACxB;;;AAED,AAAA,MAAM,CAAC,GAAG,CAAC;EACV,OAAO,EAAE,eAAe;CACxB;;;AAED,AAAA,MAAM,CAAC,GAAG,AAAA,WAAW,CAAC;EACrB,OAAO,EAAE,IAAI;CACb;;;AAED,AAAA,MAAM,CAAC,GAAG,CAAC,GAAG,CAAC;EACd,OAAO,EAAE,GAAG;CACZ;;;AAED,AAAA,IAAI,CAAC;EACJ,MAAM,EAAE,MAAM;EACd,OAAO,EAAE,eAAe;CACxB;;;AAED,AAAA,KAAK,CAAC;EACL,UAAU,EAAE,GAAG;EACf,OAAO,EAAE,GAAG;EACZ,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,eAAe;CACxB;;;AAED,AAAA,YAAY,CAAC;EACZ,gBAAgB,EAAE,KAAK;EACvB,MAAM,EAAE,OAAO;CAMf;;;AARD,AAKC,YALW,AAKV,MAAM,CAAC;EACP,gBAAgB,EAAE,IAAI;CACtB;;;AAGF,AAAA,UAAU,CAAC;EACV,gBAAgB,EAAE,KAAK;EACvB,MAAM,EAAE,OAAO;CACf"
+}

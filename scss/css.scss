@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@600&family=Kanit:wght@900&display=swap');
+body {
+	margin: 10px auto;
+	width: 660px;
+	background-image: url('images/bg.jpg');
+	background-repeat: repeat;
+}
+
+header {
+	font-family: 'Abril Fatface', cursive;
+	margin: 10px auto 0;
+	display: flex;
+	flex-direction: row;
+	font-size: 17px;
+}
+
+header > div {
+	background-color: #303841;
+	color: yellow;
+	outline: 2px solid black;
+}
+
+header div div {
+	position: relative;
+	width: calc(100% - 30px);
+}
+header > div:first-child {
+	width: 20%;
+}
+
+.header-img {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 4px;
+}
+
+#timer, #counter {
+	padding: 10px 15px;
+}
+
+header > div:nth-child(3), header > div:nth-child(4) {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 15%;
+}
+
+header div img {
+	height: 35px;
+}
+
+main {
+	margin: 0 auto;
+	outline: 2px solid black;
+	margin-top: 2px;
+}
+
+table {
+	width: 100%;
+	background-color: #E7EAED;
+	table-layout: fixed;
+}
+
+.cellNeutral {
+	background-color: green;
+	cursor: pointer;
+}
+
+.cellEmpty {
+	background-color: #E7EAED;
+	cursor: default;
+}
+
+.cellFlag {
+	background-color: green;
+	cursor: default;
+	transition: all 0.5s;
+}
+
+.cellMine {
+	background-color: #E7EAED;
+	cursor: default;
+	transition: all 0.5s;
+}
+
+#field tr td {
+	//font-family: 'Dancing Script', cursive;
+	font-family: 'Kanit', sans-serif;
+	text-align: center;
+	font-weight: 900;
+	font-size: 20px;
+	user-select: none;
+}
+
+.n1 {
+	color: rgb(0, 255, 64);
+}
+
+.n2 {
+	color: rgb(0, 128, 192);
+}
+
+.n3 {
+	color: rgb(255, 0, 0);
+}
+
+.n4 {
+	color: rgb(255, 128, 0);
+}
+
+.n5 {
+	color: rgb(128, 0, 0);
+}
+
+.n6 {
+	color: rgb(128, 0, 128);
+}
+
+.n7 {
+	color: rgb(64, 0, 64);
+}
+
+.n8 {
+	color: rgb(0, 0, 0);
+}
+
+#finish {
+	font-family: 'Dancing Script', cursive;
+	font-size: 40px;
+	color: yellow;
+	cursor: default;
+
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+
+	outline-offset: -10px;
+	outline: 10px double white;
+	border-radius: 30px;
+}
+
+#finish > div:first-child {
+	text-align: center;
+	user-select: none;
+}
+
+#finish > div:last-child {
+	display: flex;
+	justify-content: space-around;
+	padding: 0 40px;
+	user-select: none;
+}
+
+#finish div:last-child > div {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#finish div:last-child > div:nth-child(1) > div::before {
+	content: '';
+	background-image: url('images/timer.png');
+	width: 50px;
+    height: 50px;
+	position: absolute;
+    background-size: cover;
+    left: -50px;
+}
+
+#finish div:last-child > div:nth-child(2) > div::before {
+	content: '';
+	background-image: url('images/mine.png');
+	width: 50px;
+    height: 50px;
+	position: absolute;
+    background-size: cover;
+    left: -50px;
+}
+
+#finish div:last-child > div:nth-child(3) {
+	padding: 20px;
+	background-color: white;
+	//color: light
+	border-radius: 30px;
+}
+
+#finish div:last-child > div:nth-child(3):hover {
+	background-color: lightseagreen;
+	cursor: pointer;
+}
+
+.select {
+	position: relative;
+	cursor: pointer;
+	padding: 10px 15px;
+	outline: 2px solid black;
+	background-color: #303841;
+}
+
+.select:hover {
+	background-color: #303030;
+}
+
+#selected::after {
+	content: '▼';
+	color: brown;
+	position: absolute;
+	right: 5px;
+}

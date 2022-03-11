@@ -1,0 +1,249 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@600&family=Kanit:wght@900&display=swap");
+/* line 2, ../projects/Mines/scss/css.scss */
+body {
+  margin: 10px auto;
+  width: 660px;
+  background-image: url("images/bg.jpg");
+  background-repeat: repeat;
+}
+
+/* line 9, ../projects/Mines/scss/css.scss */
+header {
+  font-family: 'Abril Fatface', cursive;
+  margin: 10px auto 0;
+  display: flex;
+  flex-direction: row;
+  font-size: 17px;
+}
+
+/* line 17, ../projects/Mines/scss/css.scss */
+header > div {
+  background-color: #303841;
+  color: yellow;
+  outline: 2px solid black;
+}
+
+/* line 23, ../projects/Mines/scss/css.scss */
+header div div {
+  position: relative;
+  width: calc(100% - 30px);
+}
+
+/* line 27, ../projects/Mines/scss/css.scss */
+header > div:first-child {
+  width: 20%;
+}
+
+/* line 31, ../projects/Mines/scss/css.scss */
+.header-img {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 4px;
+}
+
+/* line 39, ../projects/Mines/scss/css.scss */
+#timer, #counter {
+  padding: 10px 15px;
+}
+
+/* line 43, ../projects/Mines/scss/css.scss */
+header > div:nth-child(3), header > div:nth-child(4) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 15%;
+}
+
+/* line 51, ../projects/Mines/scss/css.scss */
+header div img {
+  height: 35px;
+}
+
+/* line 55, ../projects/Mines/scss/css.scss */
+main {
+  margin: 0 auto;
+  outline: 2px solid black;
+  margin-top: 2px;
+}
+
+/* line 61, ../projects/Mines/scss/css.scss */
+table {
+  width: 100%;
+  background-color: #E7EAED;
+  table-layout: fixed;
+}
+
+/* line 67, ../projects/Mines/scss/css.scss */
+.cellNeutral {
+  background-color: green;
+  cursor: pointer;
+}
+
+/* line 72, ../projects/Mines/scss/css.scss */
+.cellEmpty {
+  background-color: #E7EAED;
+  cursor: default;
+}
+
+/* line 77, ../projects/Mines/scss/css.scss */
+.cellFlag {
+  background-color: green;
+  cursor: default;
+  transition: all 0.5s;
+}
+
+/* line 83, ../projects/Mines/scss/css.scss */
+.cellMine {
+  background-color: #E7EAED;
+  cursor: default;
+  transition: all 0.5s;
+}
+
+/* line 89, ../projects/Mines/scss/css.scss */
+#field tr td {
+  font-family: 'Kanit', sans-serif;
+  text-align: center;
+  font-weight: 900;
+  font-size: 20px;
+  user-select: none;
+}
+
+/* line 98, ../projects/Mines/scss/css.scss */
+.n1 {
+  color: #00ff40;
+}
+
+/* line 102, ../projects/Mines/scss/css.scss */
+.n2 {
+  color: #0080c0;
+}
+
+/* line 106, ../projects/Mines/scss/css.scss */
+.n3 {
+  color: red;
+}
+
+/* line 110, ../projects/Mines/scss/css.scss */
+.n4 {
+  color: #ff8000;
+}
+
+/* line 114, ../projects/Mines/scss/css.scss */
+.n5 {
+  color: maroon;
+}
+
+/* line 118, ../projects/Mines/scss/css.scss */
+.n6 {
+  color: purple;
+}
+
+/* line 122, ../projects/Mines/scss/css.scss */
+.n7 {
+  color: #400040;
+}
+
+/* line 126, ../projects/Mines/scss/css.scss */
+.n8 {
+  color: black;
+}
+
+/* line 130, ../projects/Mines/scss/css.scss */
+#finish {
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  color: yellow;
+  cursor: default;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  outline-offset: -10px;
+  outline: 10px double white;
+  border-radius: 30px;
+}
+
+/* line 146, ../projects/Mines/scss/css.scss */
+#finish > div:first-child {
+  text-align: center;
+  user-select: none;
+}
+
+/* line 151, ../projects/Mines/scss/css.scss */
+#finish > div:last-child {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 40px;
+  user-select: none;
+}
+
+/* line 158, ../projects/Mines/scss/css.scss */
+#finish div:last-child > div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 165, ../projects/Mines/scss/css.scss */
+#finish div:last-child > div:nth-child(1) > div::before {
+  content: '';
+  background-image: url("images/timer.png");
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-size: cover;
+  left: -50px;
+}
+
+/* line 175, ../projects/Mines/scss/css.scss */
+#finish div:last-child > div:nth-child(2) > div::before {
+  content: '';
+  background-image: url("images/mine.png");
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-size: cover;
+  left: -50px;
+}
+
+/* line 185, ../projects/Mines/scss/css.scss */
+#finish div:last-child > div:nth-child(3) {
+  padding: 20px;
+  background-color: white;
+  border-radius: 30px;
+}
+
+/* line 192, ../projects/Mines/scss/css.scss */
+#finish div:last-child > div:nth-child(3):hover {
+  background-color: lightseagreen;
+  cursor: pointer;
+}
+
+/* line 197, ../projects/Mines/scss/css.scss */
+.select {
+  position: relative;
+  cursor: pointer;
+  padding: 10px 15px;
+  outline: 2px solid black;
+  background-color: #303841;
+}
+
+/* line 205, ../projects/Mines/scss/css.scss */
+.select:hover {
+  background-color: #303030;
+}
+
+/* line 209, ../projects/Mines/scss/css.scss */
+#selected::after {
+  content: '▼';
+  color: brown;
+  position: absolute;
+  right: 5px;
+}
+
+/*# sourceMappingURL=css.css.map */
